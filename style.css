@@ -1,0 +1,225 @@
+@font-face {
+  font-family: Pixel1;
+  src: url(8bitlimr.ttf);
+}
+
+@font-face {
+  font-family: Pixel2;
+  src: url(Bitmgothic.ttf);
+}
+
+:root {
+  --distance: 0px;
+}
+
+.background-black {
+  background-color: black;
+  transition: 1s;
+}
+
+.background-white {
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 800%;
+  font-family: Pixel1;
+  font-weight: 100;
+}
+
+#title {
+  background-color: aquamarine;
+}
+
+#title h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+#title-back-layer {
+  color: rgb(255, 30, 30);
+  transform: translate(-50%, 0);
+}
+
+#title-middle-layer {
+  color: rgb(255, 100, 0);
+  transform: translate(-50%, -2%) scale(1.015);
+}
+
+#title-front-layer {
+  color: rgb(255, 160, 0);
+  transform: translate(-50%, -4%) scale(1.03);
+}
+
+p,
+h2,
+ul,
+li,
+a {
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+  font-family: Pixel2;
+  text-shadow: 1px 1px rgb(193, 98, 234), 2px 2px rgb(109, 58, 176),
+    3px 3px rgb(49, 7, 117), 4px 4px rgb(14, 0, 66);
+}
+
+a {
+  color: purple;
+}
+
+img {
+  display: block;
+  image-rendering: pixelated;
+}
+
+#section-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 45vh;
+  top: 0;
+  height: 300vh;
+}
+
+#section-one img {
+  width: 15vw;
+  height: 60vw;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+#intro-text {
+  background-color: #440305;
+  width: 45%;
+  top: -7vh;
+  padding: 20px;
+  border: 30px ridge rgb(255, 130, 10);
+  height: fit-content;
+}
+
+.icy-text {
+  color: rgb(104, 237, 255);
+  text-shadow: 1px 1px rgb(39, 148, 177), 2px 2px rgb(58, 109, 176),
+    3px 3px rgb(7, 35, 117), 4px 4px rgb(14, 0, 66);
+}
+
+.firey-text {
+  color: rgb(255, 70, 28);
+  text-shadow: 1px 1px rgb(184, 26, 74), 2px 2px rgb(113, 7, 90),
+    3px 3px rgb(68, 5, 107), 4px 4px rgb(14, 0, 66);
+}
+
+#boxes {
+  background-color: darkblue;
+  width: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: -50vh;
+  background-image: url("purple_bricks.png");
+  background-size: 100px;
+  image-rendering: pixelated;
+  background-blend-mode: darken;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-shaper {
+  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 30% 30% 30%;
+}
+
+#boxes .grid {
+  margin: auto;
+  padding: 5%;
+  grid-template-areas: ". top ." "left center right" ". bottom .";
+  gap: 5%;
+  width: 80%;
+  aspect-ratio: 1;
+}
+
+.top-bottom {
+  height: 100%;
+  justify-self: center;
+  background-color: rgb(211, 183, 2) !important;
+}
+
+.left-right {
+  width: 100%;
+  align-self: center;
+  background-color: rgb(61, 0, 174) !important;
+}
+
+#center-image {
+  order: 3;
+  grid-area: center;
+  background-color: rgb(64, 63, 67);
+}
+
+#top-image {
+  order: 1;
+  grid-area: top;
+}
+
+#left-image {
+  order: 2;
+  grid-area: left;
+}
+
+#right-image {
+  order: 4;
+  grid-area: right;
+}
+
+#bottom-image {
+  order: 5;
+  grid-area: bottom;
+}
+
+#boxes div div {
+  aspect-ratio: 1;
+  filter: blur(1px) brightness(0.5);
+  transition: 7s;
+}
+
+#boxes div div:hover,
+#boxes div div:hover * {
+  filter: blur(0) brightness(1);
+  display: initial;
+  z-index: 10;
+  position: relative;
+  height: fit-content;
+}
+
+#boxes div div img {
+  width: 50%;
+  margin: auto;
+}
+
+#boxes div div h2 {
+  position: relative;
+  top: -25px;
+  text-align: center;
+  color: white;
+}
+
+.info {
+  display: none;
+  top: 30px;
+}
+
+.info img {
+  bottom: 0;
+}
+
+ul li {
+  list-style-type: circle;
+}

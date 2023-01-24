@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="flame.gif" type="image/gif" />
+    <title>About Me</title>
+  </head>
+  <body class="background-black" id="body">
+    <div id="title">
+      <h1 id="title-back-layer">About Me</h1>
+      <h1 id="title-middle-layer">About Me</h1>
+      <h1 id="title-front-layer">About Me</h1>
+    </div>
+    <div id="section-one">
+      <img src="tile.png" />
+      <div id="intro-text">
+        <p>Greetings.</p>
+        <p>
+          I am <span class="icy-text">frost</span
+          ><span class="firey-text">burn</span>, a 16 year old highschool
+          student from Sweden, and this is my assignment for web development
+          class! I hope using English is allowed. I could not see anything
+          suggesting that it would not be.
+        </p>
+        <ul>
+          Here's some info for you!
+          <li>Birthday - 10/10</li>
+          <li>Favorite color - Purple</li>
+          <li>Favorite Thai Cube variety - Spicy Sesame Chicken</li>
+        </ul>
+        <p>
+          I love art and math! But also many other things. You can see more
+          about my interests by hovering your mouse over the different interests
+          below.
+        </p>
+      </div>
+      <img src="tile.png" />
+    </div>
+
+    <div id="boxes">
+      <div id="grid" class="grid grid-shaper">
+        <div
+          id="center-image"
+          onmouseenter="makeLarge(2,2);backgroundColor('white')"
+          onmouseleave="makeNormal()"
+        >
+          <img src="tile.png" />
+          <h2>The Elements</h2>
+          <div id="elements-info" class="info">
+            <p>
+              Elemental magic is one of the most facinating things in the world.
+              Here are some of the elements I know of:
+            </p>
+            <ul>
+              <li>Fire</li>
+              <li>Ice</li>
+              <li>Air</li>
+              <li>Earth</li>
+              <li>Water</li>
+              <li>Light</li>
+              <li>Dark</li>
+            </ul>
+            <img src="hairmonster.jpg" />
+          </div>
+        </div>
+        <div
+          id="top-image"
+          class="top-bottom"
+          onmouseenter="makeLarge(2,1,'top-bottom')"
+          onmouseleave="makeNormal()"
+        >
+          <img src="tile2.png" />
+          <h2>Artwork</h2>
+          <div id="artwork-info" class="info">
+            <p>
+              I love art! I do lots of art, but I can also often be lazy. My
+              favorite artforms include drawing, pixel art and acrylic painting.
+            </p>
+            <img src="balloonmonster.jpg" />
+          </div>
+        </div>
+        <div
+          id="left-image"
+          class="left-right"
+          onmouseenter="makeLarge(1,2,'top-bottom')"
+          onmouseleave="makeNormal()"
+        >
+          <img src="tile3.png" />
+          <h2>Music</h2>
+          <div id="music-info" class="info">
+            <p>
+              I love music! And many kinds, on top of that! My favorite genres
+              are EDM, Metal and Classical. I have played the piano for many
+              years, and before that I used to play doublebass.
+            </p>
+            <img src="cool.png" />
+          </div>
+        </div>
+        <div
+          id="right-image"
+          class="left-right"
+          onmouseenter="makeLarge(3,2,'left-right')"
+          onmouseleave="makeNormal()"
+        >
+          <img src="tile.png" />
+          <h2>Politics</h2>
+          <div id="politics-info" class="info">
+            <p>
+              I am really interested in politics, espeically the politics of
+              USA. I would describe myself as a moderate libertarian
+              conservetive. Here are some cool links!
+            </p>
+            <a href="https://8values.github.io/">8values political test</a>
+            <a href="https://www.politicalcompass.org/">Political Compass</a>
+          </div>
+        </div>
+        <div
+          id="bottom-image"
+          class="top-bottom"
+          onmouseenter="makeLarge(2,3,'left-right')"
+          onmouseleave="makeNormal()"
+        >
+          <img src="tile3.png" />
+          <h2>Education</h2>
+          <div id="education-info" class="info">
+            <p>
+              I love learning. School is too easy, and then it's suddenly too
+              hard. I can't keep track. But apparantly I have A's in most
+              subjects, somehow.
+            </p>
+            <img src="shadow.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
